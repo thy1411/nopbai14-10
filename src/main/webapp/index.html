@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert User</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Add New User</h1>
+        <form action="SaveServlet" method="POST">
+            <table border="1">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="uname" value="" required /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="upass" value="" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="uemail"/></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country">
+                            <option value="VietNam">Vietnam</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Save" /></td>
+                </tr>
+            </table>
+            
+        </form>
+        <a href="ViewServlet">View Users</a>
+    </body>
+</html>
